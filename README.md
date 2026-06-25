@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Macquarie Engineering & Construction
 
-## Getting Started
+Welcome to the official website for Macquarie Engineering & Construction, a modern, highly interactive Next.js application designed to showcase comprehensive engineering and construction solutions. Built with cutting-edge web technologies, the site features a dark, premium aesthetic with smooth parallax scrolling, fluid animations, and a responsive layout.
 
-First, run the development server:
+## 🚀 Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** CSS Modules with custom variables for a consistent design system
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/) (and custom inline SVGs)
+- **Image Optimization:** `next/image` with optimized `sizes`
+- **Package Manager:** npm
+
+## 📁 File Structure
+
+The project follows a modular, feature-based directory structure using the Next.js App Router:
+
+```text
+├── public/                  # Static assets (images, icons, fonts)
+│   └── images/              # High-quality optimized images for the site
+├── src/
+│   ├── app/                 # Next.js App Router root
+│   │   ├── about/           # About Us page
+│   │   ├── contact/         # Contact Us page
+│   │   ├── projects/        # Featured Projects page
+│   │   ├── services/        # Services page
+│   │   ├── globals.css      # Global CSS variables and styles
+│   │   ├── layout.tsx       # Root layout containing Navbar and Footer
+│   │   ├── page.tsx         # Home page
+│   │   └── template.tsx     # Page transition wrapper
+│   └── components/          # Reusable React components
+│       ├── animations/      # Framer Motion custom wrappers (Typewriter, ParallaxImage, etc.)
+│       ├── layout/          # Global layout parts (Navbar, Footer)
+│       └── ui/              # UI elements (Button, ServiceCard, ProjectCard, Logo)
+├── .gitignore               # Standard Git ignore rules
+├── next.config.mjs          # Next.js configuration
+├── package.json             # Project dependencies and scripts
+└── tsconfig.json            # TypeScript configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Setup & Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Follow these steps to set up the project locally:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/SocialOrangeGlobal/macquarie-engineering-construction.git
+   cd macquarie-engineering-construction
+   ```
 
-## Learn More
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Design System
 
-## Deploy on Vercel
+The site utilizes a custom CSS variables system defined in `globals.css`. 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Primary Colors:** Deep navy blues and bright orange accents.
+- **Typography:** Modern, clean sans-serif stack ensuring readability.
+- **Animations:** Extensive use of `framer-motion` for scroll-triggered reveals, interactive hover states, and seamless page transitions.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Scripts
+
+- `npm run dev`: Starts the local development server.
+- `npm run build`: Builds the app for production deployment.
+- `npm run start`: Starts the production server.
+- `npm run lint`: Runs ESLint to catch syntax and style issues.
+
+## 📄 License
+
+Copyright &copy; Macquarie Engineering & Construction. All rights reserved.
