@@ -58,11 +58,11 @@ export default function Footer() {
               </li>
               <li className={styles.contactItem}>
                 <Phone size={20} className={styles.contactIcon} />
-                <span>+1 (555) 123-4567</span>
+                <span>1800 670 239</span>
               </li>
               <li className={styles.contactItem}>
                 <Mail size={20} className={styles.contactIcon} />
-                <span>info@macquarieec.com</span>
+                <span>macquarieec@gmail.com</span>
               </li>
             </ul>
           </div>

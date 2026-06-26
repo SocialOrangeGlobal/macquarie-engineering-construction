@@ -34,7 +34,7 @@ export default function Services() {
       {/* Page Header */}
       <section className={styles.pageHeader}>
         <ParallaxImage className={styles.pageHeaderBg} speed={0.1}>
-          <OptimizedImage src="/images/services/services.jpg" alt="Our Services Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
+          <OptimizedImage src="/images/services/our-services.jpg" alt="Our Services Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
         </ParallaxImage>
         <div className={styles.pageHeaderOverlay}></div>
         <motion.div

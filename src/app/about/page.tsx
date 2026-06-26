@@ -18,7 +18,7 @@ export default function About() {
       {/* Page Header */}
       <section className={styles.pageHeader}>
         <ParallaxImage className={styles.pageHeaderBg} speed={0.1}>
-          <OptimizedImage src="/images/about/about.jpg" alt="About Us Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
+          <OptimizedImage src="/images/about/about-me.jpg" alt="About Us Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
         </ParallaxImage>
         <div className={styles.pageHeaderOverlay}></div>
         <motion.div
@@ -57,7 +57,7 @@ export default function About() {
             className={styles.imagePlaceholder}
           >
             <ParallaxImage speed={0.15}>
-              <OptimizedImage src="/images/about/about-story.jpg" alt="Our Story" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
+              <OptimizedImage src="/images/about/about-us.jpg" alt="Our Story" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
             </ParallaxImage>
           </motion.div>
         </div>

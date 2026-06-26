@@ -37,7 +37,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <ParallaxImage className={styles.heroBg} speed={0.1}>
-          <OptimizedImage src="/images/home/hero.jpg" alt="Hero Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
+          <OptimizedImage src="/images/home/hero-bg.jpg" alt="Hero Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
         </ParallaxImage>
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
@@ -122,19 +122,19 @@ export default function Home() {
             viewport={{ once: true, margin: "-50px" }}
             className={styles.servicesGrid}
           >
-          {servicesData.slice(0, 4).map((service) => (
-            <motion.div key={service.id} variants={itemFadeUp}>
-              <ServiceCard
-                title={service.title}
-                description={service.description}
-                Icon={service.Icon}
-                href={`/services#${service.id}`}
-                bgImage={service.bgImage}
-                features={service.features}
-                onLearnMore={() => setSelectedService(service)}
-              />
-            </motion.div>
-          ))}
+            {servicesData.slice(0, 4).map((service) => (
+              <motion.div key={service.id} variants={itemFadeUp}>
+                <ServiceCard
+                  title={service.title}
+                  description={service.description}
+                  Icon={service.Icon}
+                  href={`/services#${service.id}`}
+                  bgImage={service.bgImage}
+                  features={service.features}
+                  onLearnMore={() => setSelectedService(service)}
+                />
+              </motion.div>
+            ))}
           </motion.div>
 
           <div className={styles.viewAllServices}>

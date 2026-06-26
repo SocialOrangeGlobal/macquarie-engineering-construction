@@ -76,8 +76,8 @@ export default function TermsOfService() {
             <p>
               Macquarie Engineering & Construction<br />
               L 10 100 St Georges Tce, Perth WA 6000<br />
-              Email: info@macquarieec.com<br />
-              Phone: +1 (555) 123-4567
+              Email: macquarieec@gmail.com<br />
+              Phone: 1800 670 239
             </p>
           </motion.div>
         </div>

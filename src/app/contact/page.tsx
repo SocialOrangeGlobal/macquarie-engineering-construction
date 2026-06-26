@@ -47,7 +47,7 @@ export default function Contact() {
       {/* Page Header */}
       <section className={styles.pageHeader}>
         <ParallaxImage className={styles.pageHeaderBg} speed={0.1}>
-          <OptimizedImage src="/images/contact/contacts.jpg" alt="Contact Us Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
+          <OptimizedImage src="/images/contact/contact-me.jpg" alt="Contact Us Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
         </ParallaxImage>
         <div className={styles.pageHeaderOverlay}></div>
         <motion.div
@@ -87,14 +87,14 @@ export default function Contact() {
                 <div className={styles.iconWrapper}><Phone size={24} /></div>
                 <div>
                   <h3>Phone</h3>
-                  <p>+1 (555) 123-4567</p>
+                  <p>1800 670 239</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
                 <div className={styles.iconWrapper}><Mail size={24} /></div>
                 <div>
                   <h3>Email</h3>
-                  <p>info@macquarieec.com</p>
+                  <p>macquarieec@gmail.com</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
@@ -153,7 +153,7 @@ export default function Contact() {
                     name="phone"
                     value={formState.phone}
                     onChange={handleChange}
-                    placeholder="+61 400 000 000"
+                    placeholder="1800 670 239"
                     suppressHydrationWarning
                   />
                 </div>
@@ -234,16 +234,16 @@ export default function Contact() {
               <button className={styles.closeBtn} onClick={() => setIsModalOpen(false)}>
                 <X size={24} />
               </button>
-              
+
               <div className={styles.modalIcon}>
                 <CheckCircle size={48} color="var(--color-accent-primary)" />
               </div>
-              
+
               <h3 className={styles.modalTitle}>Message Sent!</h3>
               <p className={styles.modalText}>
                 Thank you for getting in touch. We have received your message and one of our experts will contact you shortly.
               </p>
-              
+
               <Button variant="primary" onClick={() => setIsModalOpen(false)} className={styles.modalBtn}>
                 Done
               </Button>
