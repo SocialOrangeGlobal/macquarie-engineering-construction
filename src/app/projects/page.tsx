@@ -1,9 +1,8 @@
 'use client';
 
-import React from 'react';
 import styles from './page.module.css';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import OptimizedImage from '@/components/ui/OptimizedImage';
 import ParallaxImage from '@/components/animations/ParallaxImage';
 import ProjectCard from '@/components/ui/ProjectCard';
 import TextReveal from '@/components/animations/TextReveal';
@@ -65,7 +64,7 @@ export default function Projects() {
       {/* Page Header */}
       <section className={styles.pageHeader}>
         <ParallaxImage className={styles.pageHeaderBg} speed={0.1}>
-          <Image src="/images/projects/projects.jpg" alt="Featured Projects Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
+          <OptimizedImage src="/images/projects/projects.jpg" alt="Featured Projects Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
         </ParallaxImage>
         <div className={styles.pageHeaderOverlay}></div>
         <motion.div
@@ -104,7 +103,7 @@ export default function Projects() {
       {/* CTA */}
       <section className={styles.ctaBanner}>
         <ParallaxImage className={styles.ctaBg} speed={0.1}>
-          <Image src="/images/projects/cta-projects.jpg" alt="Start your project" fill style={{ objectFit: 'cover' }} sizes="100vw" />
+          <OptimizedImage src="/images/projects/cta-projects.jpg" alt="Start your project" fill style={{ objectFit: 'cover' }} sizes="100vw" />
         </ParallaxImage>
         <div className={styles.ctaOverlay}></div>
         <motion.div

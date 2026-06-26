@@ -70,8 +70,7 @@
 .description {
   color: var(--color-text-secondary);
   line-height: 1.6;
-  margin-bottom: 2rem;
-  flex-grow: 1;
+  margin-bottom: 1rem;
 }
 
 .link {
@@ -89,4 +88,25 @@
 
 .card:hover .link {
   gap: 1rem;
+}
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+.featuresList li {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.featuresList li::before {
+  content: '•';
+  color: var(--color-accent-primary);
+  font-weight: bold;
 }

@@ -1,18 +1,22 @@
 'use client';
 
-import React from 'react';
+import { useState } from 'react';
 import styles from './page.module.css';
 import { motion } from 'framer-motion';
 import Button from '@/components/ui/Button';
 import ServiceCard from '@/components/ui/ServiceCard';
+import ServiceModal from '@/components/ui/ServiceModal';
 import ProjectCard from '@/components/ui/ProjectCard';
-import { Building2, HardHat, Ruler, Truck, ShieldCheck, Users, Clock, Award } from 'lucide-react';
-import Image from 'next/image';
+import { Building2, Home as HomeIcon, Hammer, Factory, ShieldCheck, Users, Clock, Award } from 'lucide-react';
+import OptimizedImage from '@/components/ui/OptimizedImage';
 import TextReveal from '@/components/animations/TextReveal';
 import ParallaxImage from '@/components/animations/ParallaxImage';
 import Typewriter from '@/components/animations/Typewriter';
+import { servicesData } from '@/data/servicesData';
 
 export default function Home() {
+  const [selectedService, setSelectedService] = useState<any>(null);
+
   const staggerContainer = {
     hidden: { opacity: 0 },
     show: {
@@ -32,8 +36,8 @@ export default function Home() {
     <div className={styles.main}>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <ParallaxImage className={styles.heroBackground}>
-          <Image src="/images/home/hero.jpg" alt="Hero Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
+        <ParallaxImage className={styles.heroBg} speed={0.1}>
+          <OptimizedImage src="/images/home/hero.jpg" alt="Hero Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
         </ParallaxImage>
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
@@ -92,7 +96,7 @@ export default function Home() {
             className={styles.overviewImage}
           >
             <ParallaxImage className={styles.imagePlaceholder} speed={0.15}>
-              <Image src="/images/home/about.jpg" alt="About Macquarie" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
+              <OptimizedImage src="/images/home/about.jpg" alt="About Macquarie" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
             </ParallaxImage>
           </motion.div>
         </div>
@@ -118,42 +122,19 @@ export default function Home() {
             viewport={{ once: true, margin: "-50px" }}
             className={styles.servicesGrid}
           >
-            <motion.div variants={itemFadeUp}>
+          {servicesData.slice(0, 4).map((service) => (
+            <motion.div key={service.id} variants={itemFadeUp}>
               <ServiceCard
-                title="Commercial Construction"
-                description="State-of-the-art office buildings and retail spaces designed for modern business needs."
-                Icon={Building2}
-                href="/services#commercial"
-                bgImage="/images/services/commercial-construction.jpg"
+                title={service.title}
+                description={service.description}
+                Icon={service.Icon}
+                href={`/services#${service.id}`}
+                bgImage={service.bgImage}
+                features={service.features}
+                onLearnMore={() => setSelectedService(service)}
               />
             </motion.div>
-            <motion.div variants={itemFadeUp}>
-              <ServiceCard
-                title="Industrial Facilities"
-                description="Robust warehouses, manufacturing plants, and logistics hubs built for operational efficiency."
-                Icon={HardHat}
-                href="/services#industrial"
-                bgImage="/images/services/industrial-facilities.jpg"
-              />
-            </motion.div>
-            <motion.div variants={itemFadeUp}>
-              <ServiceCard
-                title="Civil Infrastructure"
-                description="Critical infrastructure projects including roadworks, bridges, and public utilities."
-                Icon={Truck}
-                href="/services#infrastructure"
-                bgImage="/images/services/civil-infrastructure.jpg"
-              />
-            </motion.div>
-            <motion.div variants={itemFadeUp}>
-              <ServiceCard
-                title="Design & Planning"
-                description="Comprehensive architectural design and engineering planning from concept to approval."
-                Icon={Ruler}
-                href="/services#design"
-                bgImage="/images/services/design-planning.jpg"
-              />
-            </motion.div>
+          ))}
           </motion.div>
 
           <div className={styles.viewAllServices}>
@@ -162,8 +143,14 @@ export default function Home() {
         </div>
       </section>
 
+      <ServiceModal
+        isOpen={selectedService !== null}
+        onClose={() => setSelectedService(null)}
+        service={selectedService}
+      />
+
       {/* Featured Projects */}
-      <section className="section-container">
+      {/* <section className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -204,12 +191,12 @@ export default function Home() {
         <div className={styles.viewAllServices}>
           <Button href="/projects" variant="secondary">View All Projects</Button>
         </div>
-      </section>
+      </section> */}
 
       {/* Final CTA Banner */}
       <section className={styles.ctaBanner}>
         <ParallaxImage className={styles.ctaBg} speed={0.1}>
-          <Image src="/images/home/cta-section.jpg" alt="Call to Action Background" fill style={{ objectFit: 'cover' }} sizes="100vw" />
+          <OptimizedImage src="/images/home/cta-section.jpg" alt="Call to Action Background" fill style={{ objectFit: 'cover' }} sizes="100vw" />
         </ParallaxImage>
         <div className={styles.ctaOverlay}></div>
         <motion.div

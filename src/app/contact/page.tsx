@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import Button from '@/components/ui/Button';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import TextReveal from '@/components/animations/TextReveal';
-import Image from 'next/image';
+import OptimizedImage from '@/components/ui/OptimizedImage';
 import ParallaxImage from '@/components/animations/ParallaxImage';
 
 export default function Contact() {
@@ -43,7 +43,7 @@ export default function Contact() {
       {/* Page Header */}
       <section className={styles.pageHeader}>
         <ParallaxImage className={styles.pageHeaderBg} speed={0.1}>
-          <Image src="/images/contact/contacts.jpg" alt="Contact Us Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
+          <OptimizedImage src="/images/contact/contacts.jpg" alt="Contact Us Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
         </ParallaxImage>
         <div className={styles.pageHeaderOverlay}></div>
         <motion.div
@@ -76,7 +76,7 @@ export default function Contact() {
                 <div className={styles.iconWrapper}><MapPin size={24} /></div>
                 <div>
                   <h3>Global Headquarters</h3>
-                  <p>456 Corporate Blvd, New York, NY 10001, USA</p>
+                  <p>L 10 100 St Georges Tce, Perth WA 6000</p>
                 </div>
               </div>
               <div className={styles.infoItem}>
@@ -192,8 +192,8 @@ export default function Contact() {
 
       {/* Map Placeholder */}
       <section className={styles.mapSection}>
-        <ParallaxImage className={styles.mapBg} speed={0.1}>
-          <Image src="/images/contact/cta-contacts.jpg" alt="Map Location Background" fill style={{ objectFit: 'cover' }} sizes="100vw" />
+        <ParallaxImage className={styles.mapBg} speed={0.05}>
+          <OptimizedImage src="/images/contact/cta-contacts.jpg" alt="Map Location Background" fill style={{ objectFit: 'cover' }} sizes="100vw" />
         </ParallaxImage>
         <div className={styles.mapDarkOverlay}></div>
         <div className={styles.mapPlaceholder}>

@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './ProjectCard.module.css';
 import { MapPin } from 'lucide-react';
-import Image from 'next/image';
+import OptimizedImage from '@/components/ui/OptimizedImage';
 
 interface ProjectCardProps {
   title: string;
@@ -19,7 +19,7 @@ export default function ProjectCard({ title, category, location, description, im
     <motion.div className={styles.card} whileHover={{ y: -8 }} transition={{ type: 'spring', stiffness: 300, damping: 20 }}>
       <div className={styles.imageContainer}>
         {imageUrl ? (
-          <Image src={imageUrl} alt={title} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className={styles.image} />
+          <OptimizedImage src={imageUrl} alt={title} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className={styles.image} />
         ) : (
           <div className={styles.imagePlaceholder}></div>
         )}

@@ -31,11 +31,11 @@ export default function Footer() {
             <p className={styles.description}>
               From Concept to Completion — Built with Precision, Delivered with Integrity.
             </p>
-            <div className={styles.socialLinks}>
+            {/* <div className={styles.socialLinks}>
               <a href="#" className={styles.socialLink} aria-label="Facebook"><FacebookIcon size={20} /></a>
               <a href="#" className={styles.socialLink} aria-label="Twitter"><TwitterIcon size={20} /></a>
               <a href="#" className={styles.socialLink} aria-label="LinkedIn"><LinkedinIcon size={20} /></a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -53,10 +53,10 @@ export default function Footer() {
           <div className={styles.col}>
             <h4 className={styles.heading}>Services</h4>
             <ul className={styles.linksList}>
+              <li><Link href="/services#residential" className={styles.link}>Residential Construction</Link></li>
               <li><Link href="/services#commercial" className={styles.link}>Commercial Construction</Link></li>
-              <li><Link href="/services#industrial" className={styles.link}>Industrial Facilities</Link></li>
-              <li><Link href="/services#residential" className={styles.link}>Luxury Residential</Link></li>
-              <li><Link href="/services#infrastructure" className={styles.link}>Civil Infrastructure</Link></li>
+              <li><Link href="/services#industrial" className={styles.link}>Industrial Construction</Link></li>
+              <li><Link href="/services#infrastructure" className={styles.link}>Civil & Infrastructure</Link></li>
             </ul>
           </div>
 
@@ -66,7 +66,7 @@ export default function Footer() {
             <ul className={styles.contactList}>
               <li className={styles.contactItem}>
                 <MapPin size={20} className={styles.contactIcon} />
-                <span>456 Corporate Blvd, New York, NY 10001, USA</span>
+                <span>L 10 100 St Georges Tce, Perth WA 6000</span>
               </li>
               <li className={styles.contactItem}>
                 <Phone size={20} className={styles.contactIcon} />

@@ -1,10 +1,9 @@
 'use client';
 
-import React from 'react';
 import styles from './page.module.css';
 import { motion } from 'framer-motion';
 import Button from '@/components/ui/Button';
-import Image from 'next/image';
+import OptimizedImage from '@/components/ui/OptimizedImage';
 import TextReveal from '@/components/animations/TextReveal';
 import ParallaxImage from '@/components/animations/ParallaxImage';
 
@@ -19,7 +18,7 @@ export default function About() {
       {/* Page Header */}
       <section className={styles.pageHeader}>
         <ParallaxImage className={styles.pageHeaderBg} speed={0.1}>
-          <Image src="/images/about/about.jpg" alt="About Us Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
+          <OptimizedImage src="/images/about/about.jpg" alt="About Us Background" fill style={{ objectFit: 'cover' }} sizes="100vw" priority />
         </ParallaxImage>
         <div className={styles.pageHeaderOverlay}></div>
         <motion.div
@@ -58,7 +57,7 @@ export default function About() {
             className={styles.imagePlaceholder}
           >
             <ParallaxImage speed={0.15}>
-              <Image src="/images/about/about-story.jpg" alt="Our Story" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
+              <OptimizedImage src="/images/about/about-story.jpg" alt="Our Story" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
             </ParallaxImage>
           </motion.div>
         </div>
@@ -75,7 +74,7 @@ export default function About() {
               className={styles.missionCard}
             >
               <div className={styles.missionBg}>
-                <Image src="/images/about/our-mission.jpg" alt="Our Mission" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
+                <OptimizedImage src="/images/about/our-mission.jpg" alt="Our Mission" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
               <div className={styles.missionOverlay}></div>
               <div className={styles.missionContent}>
@@ -91,7 +90,7 @@ export default function About() {
               className={styles.missionCard}
             >
               <div className={styles.missionBg}>
-                <Image src="/images/about/our-vission.jpg" alt="Our Vision" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
+                <OptimizedImage src="/images/about/our-vission.jpg" alt="Our Vision" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
               <div className={styles.missionOverlay}></div>
               <div className={styles.missionContent}>
@@ -135,7 +134,7 @@ export default function About() {
       {/* CTA */}
       <section className={styles.ctaBanner}>
         <ParallaxImage className={styles.ctaBg} speed={0.1}>
-          <Image src="/images/about/we-meet.jpg" alt="Work With Our Experts" fill style={{ objectFit: 'cover' }} sizes="100vw" />
+          <OptimizedImage src="/images/about/we-meet.jpg" alt="Work With Our Experts" fill style={{ objectFit: 'cover' }} sizes="100vw" />
         </ParallaxImage>
         <div className={styles.ctaOverlay}></div>
         <motion.div
