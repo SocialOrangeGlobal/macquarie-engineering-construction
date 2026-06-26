@@ -6,11 +6,10 @@
 }
 
 .logoImage {
-  width: auto;
-  height: 45px;
+  width: 100%;
+  height: auto;
+  max-width: 250px;
   object-fit: contain;
-  transform: scale(3.0);
-  transform-origin: left center;
 }
 
 .mark {

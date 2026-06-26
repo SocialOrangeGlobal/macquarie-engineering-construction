@@ -148,3 +148,7 @@
 .legalLink:hover {
   color: var(--color-text-primary);
 }
+
+.footerLogoImage {
+  max-width: 320px;
+}
