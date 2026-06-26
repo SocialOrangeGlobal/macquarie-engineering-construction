@@ -3,12 +3,13 @@
   align-items: center;
   gap: 1rem;
   text-decoration: none;
+  height: 60px;
 }
 
 .logoImage {
   width: 100%;
   height: auto;
-  max-width: 250px;
+  max-width: clamp(160px, 50vw, 250px);
   object-fit: contain;
 }
 

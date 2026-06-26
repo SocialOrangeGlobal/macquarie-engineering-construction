@@ -1,0 +1,84 @@
+.selectContainer {
+  position: relative;
+  width: 100%;
+}
+
+.selectHeader {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selectHeader:focus, .selectHeader.open {
+  outline: none;
+  border-color: var(--color-accent-primary);
+  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.2);
+}
+
+.selectHeader .placeholder {
+  color: #9ca3af;
+}
+
+.arrow {
+  color: #CBD5E1;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdownList {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  /* Hide scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.dropdownList::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.option {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+.option:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.option.selected {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--color-accent-primary);
+  font-weight: 500;
+}

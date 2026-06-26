@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 50;
-  padding: 1.5rem 0;
+  padding: 0.5rem 0;
   transition: all 0.3s ease;
   background-color: transparent;
 }
@@ -12,15 +12,17 @@
 .header.scrolled {
   background-color: rgba(11, 17, 32, 0.95);
   backdrop-filter: blur(10px);
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid var(--color-border);
 }
 
 .container {
+  position: relative;
+  z-index: 50;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 clamp(1rem, 4vw, 2rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,12 +80,12 @@
 }
 
 .ctaBtn {
-  display: none;
+  display: none !important;
 }
 
 @media (min-width: 768px) {
   .ctaBtn {
-    display: inline-flex;
+    display: inline-flex !important;
     padding: 0.6rem 1.25rem !important;
     font-size: 0.875rem !important;
   }
@@ -108,13 +110,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
   background-color: var(--color-bg-surface);
   z-index: 40;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   padding-top: 5rem;
+  overflow-y: auto;
 }
 
 .mobileMenu.open {

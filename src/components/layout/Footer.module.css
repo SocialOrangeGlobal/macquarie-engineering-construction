@@ -1,7 +1,7 @@
 .footer {
   background-color: var(--color-bg-surface);
   border-top: 1px solid var(--color-border);
-  padding-top: 5rem;
+  padding-top: clamp(3rem, 6vw, 5rem);
 }
 
 .container {
@@ -13,7 +13,7 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
+  gap: clamp(2rem, 5vw, 3rem);
   margin-bottom: 4rem;
 }
 
@@ -132,10 +132,13 @@
   color: var(--color-text-secondary);
   font-size: 0.875rem;
   margin: 0;
+  text-align: center;
 }
 
 .legalLinks {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
 }
 
@@ -150,5 +153,5 @@
 }
 
 .footerLogoImage {
-  max-width: 320px;
+  max-width: clamp(200px, 60vw, 320px);
 }

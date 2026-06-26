@@ -6,7 +6,7 @@
 .hero {
   position: relative;
   height: 100vh;
-  min-height: 600px;
+  min-height: clamp(450px, 100vh, 600px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,7 +74,7 @@
 .overviewGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 4rem;
+  gap: clamp(2rem, 5vw, 4rem);
   align-items: center;
 }
 
@@ -85,12 +85,12 @@
 }
 
 .overviewTitle {
-  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   margin-bottom: 1.5rem;
 }
 
 .overviewDescription {
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   margin-bottom: 2rem;
   line-height: 1.8;
 }
@@ -185,7 +185,7 @@
 .ctaBanner {
   position: relative;
   text-align: center;
-  padding: 8rem 2rem;
+  padding: clamp(4rem, 8vw, 8rem) clamp(1.25rem, 4vw, 2rem);
   background-color: var(--color-bg-primary);
   border-top: 1px solid var(--color-accent-primary);
   overflow: hidden;
@@ -229,7 +229,7 @@
 }
 
 .ctaContent h2 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 1.5rem;
 }
 

@@ -21,7 +21,7 @@ export default function Button({ children, variant = 'primary', href, className 
 
   if (href) {
     return (
-      <MotionLink href={href} className={btnClass} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} transition={{ type: 'spring', stiffness: 400, damping: 10 }}>
+      <MotionLink href={href} className={btnClass} onClick={onClick} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} transition={{ type: 'spring', stiffness: 400, damping: 10 }}>
         {children}
       </MotionLink>
     );

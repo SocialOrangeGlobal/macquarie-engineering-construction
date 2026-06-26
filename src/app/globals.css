@@ -59,7 +59,7 @@ html {
 
 /* Standard Section Layout */
 .section-container {
-  padding: 5rem 2rem;
+  padding: clamp(3rem, 8vw, 5rem) clamp(1.25rem, 4vw, 2rem);
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -80,9 +80,9 @@ html {
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: clamp(2rem, 5vw, 3rem);
 }
 
 .section-subtitle {

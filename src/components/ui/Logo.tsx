@@ -11,6 +11,7 @@ export default function Logo() {
         width={250}
         height={50}
         className={styles.logoImage}
+        style={{ width: '100%', height: 'auto' }}
         priority
       />
     </Link>
