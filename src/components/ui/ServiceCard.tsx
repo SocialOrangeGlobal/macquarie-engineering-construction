@@ -21,12 +21,9 @@ export default function ServiceCard({ title, description, Icon, href, bgImage, f
   return (
     <motion.div className={styles.card} whileHover={{ y: -5 }} transition={{ type: 'spring', stiffness: 400, damping: 20 }}>
       {bgImage && (
-        <>
-          <div className={styles.bgImage}>
-            <OptimizedImage src={bgImage} alt={title} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-          </div>
-          <div className={styles.overlay}></div>
-        </>
+        <div className={styles.imageContainer}>
+          <OptimizedImage src={bgImage} alt={title} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+        </div>
       )}
       <div className={styles.content}>
         <div className={styles.iconWrapper}>

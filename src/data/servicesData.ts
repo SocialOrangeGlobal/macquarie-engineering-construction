@@ -20,7 +20,7 @@ export const servicesData: ServiceData[] = [
     title: 'Residential Construction',
     description: 'We engineer and construct premium residential properties with uncompromising attention to detail.',
     Icon: HomeIcon,
-    bgImage: '/images/services/luxury-residential.jpg',
+    bgImage: '/images/services/residential-homes.jpg',
     features: [
       { title: 'New Home Construction', description: 'End-to-end building services for custom and project homes.' },
       { title: 'Knockdown & Rebuild', description: 'Complete demolition and reconstruction to maximize your land value.' },
@@ -34,7 +34,7 @@ export const servicesData: ServiceData[] = [
     title: 'Renovations & Extensions',
     description: 'Architecting transformative structural additions and premium modernization for existing properties.',
     Icon: Hammer,
-    bgImage: '/images/services/interior-fit-outs.jpg',
+    bgImage: '/images/services/renovations.jpg',
     features: [
       { title: 'Home Renovations & Refurbishments', description: 'Comprehensive interior and exterior upgrades to modernize your space.' },
       { title: 'Room Additions & Extensions', description: 'Expanding your living areas with seamless structural additions.' },
@@ -52,7 +52,7 @@ export const servicesData: ServiceData[] = [
     title: 'Commercial Construction',
     description: 'Developing high-performance, architecturally striking commercial spaces that drive business growth.',
     Icon: Building2,
-    bgImage: '/images/services/commercial-construction.jpg',
+    bgImage: '/images/services/commercial-buildings.jpg',
     features: [
       { title: 'Office Fit-Outs & Refurbishments', description: 'Modern workspace designs optimized for productivity and flow.' },
       { title: 'Retail & Hospitality Construction', description: 'Engaging customer-facing environments for shops and restaurants.' },
@@ -80,7 +80,7 @@ export const servicesData: ServiceData[] = [
     title: 'Civil & Infrastructure',
     description: 'Executing critical, large-scale civil projects that form the resilient backbone of our communities.',
     Icon: Truck,
-    bgImage: '/images/services/civil-infrastructure.jpg',
+    bgImage: '/images/services/civil-infrastructural.jpg',
     features: [
       { title: 'Site Preparation & Earthworks', description: 'Extensive excavation, leveling, and soil stabilization services.' },
       { title: 'Road & Pavement Construction', description: 'Asphalt and concrete works for private and public roadways.' },
@@ -110,7 +110,7 @@ export const servicesData: ServiceData[] = [
     title: 'Project & Construction Management',
     description: 'Comprehensive, end-to-end strategic oversight ensuring seamless and on-time project delivery.',
     Icon: Briefcase,
-    bgImage: '/images/services/facility-maintenance.jpg',
+    bgImage: '/images/services/project-construction-management.jpg',
     features: [
       { title: 'Design & Construct (D&C) Delivery', description: 'A streamlined approach combining the design and building phases into one contract.' },
       { title: 'Feasibility Studies & Cost Planning', description: 'Accurate budget forecasting and viability assessments before breaking ground.' },
@@ -144,7 +144,7 @@ export const servicesData: ServiceData[] = [
     title: 'Demolition & Site Works',
     description: 'Licensed, safe, and efficient site preparation and controlled structural demolition.',
     Icon: Wrench,
-    bgImage: '/images/services/hydraulic-services.jpg',
+    bgImage: '/images/services/demolition-siteworks.jpg',
     features: [
       { title: 'Full & Partial Demolition', description: 'Controlled dismantling of entire structures or specific interior sections.' },
       { title: 'Asbestos Removal & Disposal', description: 'Licensed, safe extraction and disposal of hazardous asbestos materials.' },
@@ -158,7 +158,7 @@ export const servicesData: ServiceData[] = [
     title: 'Consultancy & Advisory',
     description: 'Authoritative strategic advising, compliance, and auditing to navigate complex regulatory landscapes.',
     Icon: ShieldCheck,
-    bgImage: '/images/services/safety-consulting.jpg',
+    bgImage: '/images/services/consultancy-advisory.jpg',
     features: [
       { title: 'Development Feasibility & Due Diligence', description: 'In-depth analysis of zoning laws, land constraints, and profitability.' },
       { title: 'Building Code & Compliance Advice', description: 'Ensuring your designs meet every requirement of the National Construction Code.' },
