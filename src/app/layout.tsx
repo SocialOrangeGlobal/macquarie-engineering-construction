@@ -20,11 +20,20 @@ export const metadata: Metadata = {
     title: 'Macquarie Engineering & Construction',
     description: 'From Concept to Completion — Built with Precision, Delivered with Integrity.',
     siteName: 'Macquarie Engineering & Construction',
+    images: [
+      {
+        url: '/images/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Macquarie Engineering & Construction',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Macquarie Engineering & Construction',
     description: 'From Concept to Completion — Built with Precision, Delivered with Integrity.',
+    images: ['/images/logo.png'],
   },
   robots: {
     index: true,
