@@ -190,19 +190,18 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Placeholder */}
+      {/* Interactive Map */}
       <section className={styles.mapSection}>
-        <ParallaxImage className={styles.mapBg} speed={0.05}>
-          <OptimizedImage src="/images/contact/cta-contacts.jpg" alt="Map Location Background" fill style={{ objectFit: 'cover' }} sizes="100vw" />
-        </ParallaxImage>
-        <div className={styles.mapDarkOverlay}></div>
-        <div className={styles.mapPlaceholder}>
-          <div className={styles.mapOverlay}>
-            <MapPin size={48} className={styles.mapPin} />
-            <p>Interactive Map Integration</p>
-            <span>Sydney, NSW</span>
-          </div>
-        </div>
+        <iframe
+          src="https://www.google.com/maps?q=100+St+Georges+Tce,+Perth+WA+6000&output=embed"
+          width="100%"
+          height="100%"
+          style={{ border: 0, display: 'block' }}
+          allowFullScreen={false}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className={styles.mapIframe}
+        ></iframe>
       </section>
     </div>
   );
