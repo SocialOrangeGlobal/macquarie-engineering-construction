@@ -55,7 +55,7 @@ export default function Home() {
               />
             </TextReveal>
             <p className={styles.heroSubtitle}>
-              Delivering residential, commercial, industrial and infrastructure projects with precision and integrity.
+              Engineering the future of Australia. We deliver landmark residential, commercial, industrial, and infrastructure projects with uncompromising precision.
             </p>
             <div className={styles.heroButtons}>
               <Button href="/contact" variant="primary">Request a Quote</Button>
@@ -78,7 +78,7 @@ export default function Home() {
             <motion.h2 variants={itemFadeUp} className="section-subtitle">About Macquarie</motion.h2>
             <motion.h3 variants={itemFadeUp} className={styles.overviewTitle}>Built with Precision, Delivered with Integrity.</motion.h3>
             <motion.p variants={itemFadeUp} className={styles.overviewDescription}>
-              With over two decades of experience in the Australian construction industry, Macquarie Engineering and Construction has established a reputation for excellence. We bring technical expertise, innovative solutions, and a commitment to quality to every project we undertake.
+              With over two decades of defining Australia's built environment, Macquarie Engineering and Construction has forged a reputation for unrivaled structural excellence. We bring elite technical expertise, sustainable innovation, and an unwavering commitment to quality to every project.
             </motion.p>
             <motion.div variants={itemFadeUp} className={styles.overviewFeatures}>
               <div className={styles.featureItem}><ShieldCheck className={styles.featureIcon} /> <span>Uncompromising Safety</span></div>
@@ -205,8 +205,8 @@ export default function Home() {
           viewport={{ once: true }}
           className={styles.ctaContent}
         >
-          <h2>Ready to start your next project?</h2>
-          <p>Partner with Macquarie Engineering & Construction for unparalleled excellence.</p>
+          <h2>Ready to Build Something Extraordinary?</h2>
+          <p>Partner with Macquarie Engineering & Construction for unparalleled architectural and engineering excellence.</p>
           <Button href="/contact" variant="primary">Get in Touch Today</Button>
         </motion.div>
       </section>

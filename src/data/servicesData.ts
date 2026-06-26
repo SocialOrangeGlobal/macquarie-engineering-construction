@@ -18,7 +18,7 @@ export const servicesData: ServiceData[] = [
   {
     id: 'residential',
     title: 'Residential Construction',
-    description: 'We deliver high-quality homes and residential projects from the ground up.',
+    description: 'We engineer and construct premium residential properties with uncompromising attention to detail.',
     Icon: HomeIcon,
     bgImage: '/images/services/luxury-residential.jpg',
     features: [
@@ -32,7 +32,7 @@ export const servicesData: ServiceData[] = [
   {
     id: 'renovations',
     title: 'Renovations & Extensions',
-    description: 'Transforming existing spaces into something better.',
+    description: 'Architecting transformative structural additions and premium modernization for existing properties.',
     Icon: Hammer,
     bgImage: '/images/services/interior-fit-outs.jpg',
     features: [
@@ -50,7 +50,7 @@ export const servicesData: ServiceData[] = [
   {
     id: 'commercial',
     title: 'Commercial Construction',
-    description: 'Building functional and professional commercial spaces.',
+    description: 'Developing high-performance, architecturally striking commercial spaces that drive business growth.',
     Icon: Building2,
     bgImage: '/images/services/commercial-construction.jpg',
     features: [
@@ -64,7 +64,7 @@ export const servicesData: ServiceData[] = [
   {
     id: 'industrial',
     title: 'Industrial Construction',
-    description: 'Delivering durable and efficient industrial facilities.',
+    description: 'Delivering heavy-duty, highly optimized industrial facilities engineered for maximum operational efficiency.',
     Icon: Factory,
     bgImage: '/images/services/industrial-facilities.jpg',
     features: [
@@ -78,7 +78,7 @@ export const servicesData: ServiceData[] = [
   {
     id: 'infrastructure',
     title: 'Civil & Infrastructure',
-    description: 'Building the backbone of communities and developments.',
+    description: 'Executing critical, large-scale civil projects that form the resilient backbone of our communities.',
     Icon: Truck,
     bgImage: '/images/services/civil-infrastructure.jpg',
     features: [
@@ -92,7 +92,7 @@ export const servicesData: ServiceData[] = [
   {
     id: 'structural',
     title: 'Structural Engineering',
-    description: 'Expert engineering solutions for every build.',
+    description: 'Elite structural design and technical engineering solutions to support the most complex builds.',
     Icon: HardHat,
     bgImage: '/images/services/design-planning.jpg',
     features: [
@@ -108,7 +108,7 @@ export const servicesData: ServiceData[] = [
   {
     id: 'management',
     title: 'Project & Construction Management',
-    description: 'End-to-end management for seamless project delivery.',
+    description: 'Comprehensive, end-to-end strategic oversight ensuring seamless and on-time project delivery.',
     Icon: Briefcase,
     bgImage: '/images/services/facility-maintenance.jpg',
     features: [
@@ -142,7 +142,7 @@ export const servicesData: ServiceData[] = [
   {
     id: 'demolition',
     title: 'Demolition & Site Works',
-    description: 'Safe and efficient site preparation services.',
+    description: 'Licensed, safe, and efficient site preparation and controlled structural demolition.',
     Icon: Wrench,
     bgImage: '/images/services/hydraulic-services.jpg',
     features: [
@@ -156,7 +156,7 @@ export const servicesData: ServiceData[] = [
   {
     id: 'consultancy',
     title: 'Consultancy & Advisory',
-    description: 'Strategic advice to guide your project from concept to completion.',
+    description: 'Authoritative strategic advising, compliance, and auditing to navigate complex regulatory landscapes.',
     Icon: ShieldCheck,
     bgImage: '/images/services/safety-consulting.jpg',
     features: [

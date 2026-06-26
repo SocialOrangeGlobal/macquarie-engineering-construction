@@ -15,7 +15,7 @@ export default function Projects() {
       title: 'Commercial Office Complex',
       category: 'Commercial',
       location: 'Sydney CBD, NSW',
-      description: 'A state-of-the-art 45-story commercial tower featuring premium grade office spaces, retail podium, and 6-star Green Star environmental rating.',
+      description: 'A state-of-the-art 45-story commercial tower featuring premium grade office spaces, a bespoke retail podium, and an industry-leading 6-star Green Star environmental rating.',
       imageUrl: '/images/projects/commercial-office-complex.jpg'
     },
     {
@@ -23,7 +23,7 @@ export default function Projects() {
       title: 'Industrial Warehouse Facility',
       category: 'Industrial',
       location: 'Western Sydney, NSW',
-      description: 'A massive 50,000 sqm automated logistics hub built for a leading multinational distributor, featuring advanced robotics integration.',
+      description: 'A massive 50,000 sqm high-clearance automated logistics hub built for a leading multinational distributor, featuring cutting-edge robotics integration and heavy-duty structural flooring.',
       imageUrl: '/images/projects/industrial-warehouse-facility.jpg'
     },
     {
@@ -31,7 +31,7 @@ export default function Projects() {
       title: 'Luxury Residential Development',
       category: 'Residential',
       location: 'Bondi Beach, NSW',
-      description: 'An exclusive collection of 24 ultra-luxury oceanfront apartments with custom architectural finishes and private infinity pools.',
+      description: 'An exclusive collection of 24 ultra-luxury oceanfront residences engineered with custom architectural finishes, structural glazing, and private cantilevered infinity pools.',
       imageUrl: '/images/projects/luxury-residential-development.jpg'
     },
     {
@@ -39,7 +39,7 @@ export default function Projects() {
       title: 'Civil Infrastructure Upgrade',
       category: 'Infrastructure',
       location: 'Regional NSW',
-      description: 'A critical highway expansion and bridge reconstruction project, improving regional connectivity and safety standards.',
+      description: 'A critical highway expansion and highly complex bridge reconstruction project, dramatically improving regional connectivity while adhering to the strictest safety and environmental standards.',
       imageUrl: '/images/projects/civil-infrastructure-upgrade.jpg'
     }
   ];
@@ -74,7 +74,7 @@ export default function Projects() {
           className={styles.headerContent}
         >
           <TextReveal className={styles.title}>Featured Projects</TextReveal>
-          <p className={styles.subtitle}>Showcasing our commitment to engineering excellence.</p>
+          <p className={styles.subtitle}>A portfolio of landmark developments and structural achievements.</p>
         </motion.div>
       </section>
 
@@ -112,8 +112,8 @@ export default function Projects() {
           viewport={{ once: true }}
           className={styles.ctaContent}
         >
-          <h2>Have a project in mind?</h2>
-          <p>Contact our team to discuss how we can bring your vision to life.</p>
+          <h2>Have a Visionary Project in Mind?</h2>
+          <p>Contact our elite engineering team to discuss how we can architect and execute your vision at scale.</p>
           <Button href="/contact" variant="primary">Start the Conversation</Button>
         </motion.div>
       </section>

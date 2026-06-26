@@ -44,10 +44,10 @@ export default function About() {
             <h2 className="section-subtitle">Our Story</h2>
             <TextReveal className={styles.heading}>Decades of Engineering Excellence</TextReveal>
             <p>
-              Founded over 20 years ago, Macquarie Engineering and Construction started with a simple vision: to deliver uncompromising quality in every project. What began as a small structural engineering firm has grown into one of Australia's premier construction partners.
+              From our origins as a specialized structural engineering firm over two decades ago, Macquarie Engineering and Construction has evolved into one of Australia's most trusted and capable construction partners, defining skylines and communities. Our vision remains uncompromising: to deliver unparalleled architectural quality in every project.
             </p>
             <p>
-              Our journey is defined by the landmark projects we've completed and the enduring relationships we've built. We combine traditional craftsmanship with cutting-edge technology to solve complex engineering challenges.
+              Our journey is defined by the landmark projects we've architected and the enduring partnerships we've forged. We combine traditional master craftsmanship with cutting-edge construction technology to solve the most complex engineering challenges of the modern era.
             </p>
           </motion.div>
           <motion.div
@@ -79,7 +79,7 @@ export default function About() {
               <div className={styles.missionOverlay}></div>
               <div className={styles.missionContent}>
                 <h3>Our Mission</h3>
-                <p>To provide exceptional engineering and construction services that exceed client expectations, while maintaining the highest standards of safety, sustainability, and integrity.</p>
+                <p>To pioneer exceptional engineering and construction services that transcend client expectations, while setting the benchmark for safety, sustainable innovation, and structural integrity.</p>
               </div>
             </motion.div>
             <motion.div
@@ -95,7 +95,7 @@ export default function About() {
               <div className={styles.missionOverlay}></div>
               <div className={styles.missionContent}>
                 <h3>Our Vision</h3>
-                <p>To be the most trusted and innovative construction partner in Australia, shaping skylines and communities for generations to come.</p>
+                <p>To be the most authoritative and innovative construction partner in Australia, shaping iconic skylines and resilient communities for generations to come.</p>
               </div>
             </motion.div>
           </div>
@@ -144,7 +144,7 @@ export default function About() {
           className={styles.ctaContent}
         >
           <h2>Work With Our Experts</h2>
-          <p>Let's build something extraordinary together.</p>
+          <p>Let's engineer something extraordinary together.</p>
           <Button href="/contact" variant="primary">Contact Our Team</Button>
         </motion.div>
       </section>

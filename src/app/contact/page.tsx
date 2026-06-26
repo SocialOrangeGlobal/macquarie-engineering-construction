@@ -57,7 +57,7 @@ export default function Contact() {
           className={styles.headerContent}
         >
           <TextReveal className={styles.title}>Contact Us</TextReveal>
-          <p className={styles.subtitle}>Let's discuss your next big project.</p>
+          <p className={styles.subtitle}>Partner with us to engineer your vision.</p>
         </motion.div>
       </section>
 
@@ -72,7 +72,7 @@ export default function Contact() {
           >
             <h2 className={styles.heading}>Get in Touch</h2>
             <p className={styles.description}>
-              Whether you're ready to start a project or just exploring your options, our team of experts is here to answer your questions.
+              Engage with our engineering experts and project managers to discuss how we can bring your visionary project to life with precision and scale.
             </p>
 
             <div className={styles.infoList}>
