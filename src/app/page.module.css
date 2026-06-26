@@ -87,7 +87,14 @@
 .overviewTitle {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   margin-bottom: 1.5rem;
-  text-align: center;
+}
+
+@media (max-width: 1023px) {
+
+  .overviewText>h2,
+  .overviewText>.overviewTitle {
+    text-align: center;
+  }
 }
 
 .overviewDescription {
@@ -207,7 +214,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(11, 17, 32, 0.85); /* Dark base */
+  background: rgba(11, 17, 32, 0.85);
+  /* Dark base */
   z-index: 1;
 }
 
